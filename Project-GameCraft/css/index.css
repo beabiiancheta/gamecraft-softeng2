@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 
 body {
     background-color: #130e26;
@@ -9,10 +9,10 @@ body {
 }
 
 li, a, button {
-    font-family: "Share Tech Mono", monospace;
-    font-weight: 400;
+    font-family: "DM Mono", monospace;
+    font-weight: 500;
     font-style: normal;
-    font-size: 20px;
+    font-size: 18px;
     color: #ffffff;
     text-decoration: none;
 }
@@ -21,11 +21,33 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 10px 20%;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 12px;
+    background-color: #644EA0;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8769d3;
+}
+
+.material-symbols-outlined {
+    font-size: 18px;
+    vertical-align: middle;
 }
 
 .logo_bar {
-    width: 70px;
+    width: 50px;
     height: auto;
     cursor: pointer;
 }
@@ -42,23 +64,29 @@ header {
 .nav_links li a {
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 0px 20px;
-    transition: background-color 0.3s ease, padding 0.3s ease, border-radius 0.3s ease;
+    gap: 10px;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease, padding 0.3s ease, border-radius 0.3s ease-out;
 }
 
 .nav_links li a:hover {
-    background-color: #3B2A6F;
-    padding: 10px 20px;
-    border-radius: 12px;
+    background-color: #281d56;
+    padding: 8px 12px;
+    border-radius: 10px;
 }
 
 .landing_href {
     color: #130e26;
 }
 
-button {
-    padding: 9px 25px;
-    background-color: #644EA0;
-    border-radius: 12px;
+.setting_href {
+    background-color: #281d56;
+    border-radius: 100%;
+    padding: 9px;
+}
+
+.account_ctrls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
